@@ -153,7 +153,7 @@ public class Practice {
         int left = levelCount(root.left);
         int right = levelCount(root.right);
         
-        return left + right + 1;
+        return Math.max(left, right) + 1;
     }
 
 
